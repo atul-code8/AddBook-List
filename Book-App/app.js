@@ -11,7 +11,6 @@ class UI {
 
         const books = Store.getBooks();
         
-        // Dume Data
 
         // const storedBooks = [
         //     {
