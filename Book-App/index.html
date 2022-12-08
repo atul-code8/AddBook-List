@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBookList App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="logo">B</span>
+            My<span class="logo-name">Book</span>List
+        </h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title" style="display: block;">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="form-group">
+                <label for="author" style="display: block;">Author</label>
+                <input type="text" id="author">
+            </div>
+            <div class="form-group">
+                <label for="isbn" style="display: block;">ISBN#</label>
+                <input type="text" id="isbn" maxlength="8" minlength="8">
+            </div>
+            <div class="form-group">
+            <button type="submit" class="btn">Add Book</button>
+            </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
